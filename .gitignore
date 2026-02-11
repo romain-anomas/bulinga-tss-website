@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+# Node.js dependencies
+node_modules/
+# Logs
+logs/
+*.log
+# Environment files
+.env
+# IDE files
+.vscode/
+.idea/
+# PHP
+vendor/
