@@ -1,0 +1,236 @@
+/* Application Page - Full Width Modern Design */
+.application-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.form-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-left: 4px solid #dc2626;
+}
+
+.form-section {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h3 {
+  color: #1e40af;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.1);
+}
+
+.form-group small {
+  display: block;
+  color: #64748b;
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+/* File Upload Styling */
+.file-upload {
+  position: relative;
+}
+
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.file-input-wrapper input[type=file] {
+  position: absolute;
+  left: -9999px;
+}
+
+.file-input-button {
+  display: block;
+  padding: 20px;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border: 2px dashed #94a3b8;
+  border-radius: 12px;
+  text-align: center;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.file-input-button:hover {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
+}
+
+.btn-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(30,64,175,0.3);
+  border: none;
+  margin-top: 20px;
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(30,64,175,0.4);
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success Page */
+.success-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.success-box {
+  text-align: center;
+  max-width: 600px;
+  background: white;
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.success-box h1 {
+  color: #059669;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.success-box p {
+  color: #64748b;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-home {
+  display: inline-block;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(30,64,175,0.3);
+}
+
+.btn-home:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(30,64,175,0.4);
+}
+
+@media (max-width: 768px) {
+  .form-wrapper {
+    padding: 30px;
+    margin: 40px 20px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-header {
+    padding: 60px 20px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}

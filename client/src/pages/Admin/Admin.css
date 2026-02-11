@@ -1,0 +1,366 @@
+/* Admin Panel Styles */
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.login-box .error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-box .form-group {
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-box button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(30,64,175,0.3);
+}
+
+.login-box .hint {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Dashboard */
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0f172a;
+  color: white;
+  padding: 30px;
+}
+
+.sidebar h3 {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar button {
+  padding: 15px 20px;
+  background: transparent;
+  color: #94a3b8;
+  border: none;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.sidebar button:hover,
+.sidebar button.active {
+  background: #1e40af;
+  color: white;
+}
+
+.sidebar button.logout {
+  margin-top: auto;
+  background: #dc2626;
+  color: white;
+}
+
+.main-content {
+  padding: 40px;
+  background: #f1f5f9;
+  overflow-y: auto;
+}
+
+/* Stats Cards */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.stat-card.pending h4 {
+  color: #f59e0b;
+}
+
+.stat-card.accepted h4 {
+  color: #10b981;
+}
+
+/* Applications List */
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.application-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  border-left: 5px solid #94a3b8;
+}
+
+.application-card.accepted {
+  border-left-color: #10b981;
+}
+
+.application-card.rejected {
+  border-left-color: #dc2626;
+}
+
+.application-card.pending {
+  border-left-color: #f59e0b;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-header h4 {
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+.status {
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status.accepted {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.app-details {
+  margin-bottom: 20px;
+}
+
+.app-details p {
+  margin-bottom: 10px;
+  color: #475569;
+}
+
+.app-details a {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.app-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.app-actions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.app-actions .accept {
+  background: #10b981;
+  color: white;
+}
+
+.app-actions .reject {
+  background: #dc2626;
+  color: white;
+}
+
+.app-actions .pending {
+  background: #f59e0b;
+  color: white;
+}
+
+/* News Manager */
+.news-manager {
+  max-width: 800px;
+}
+
+.news-manager h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.message {
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  background: #d1fae5;
+  color: #059669;
+}
+
+.news-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.news-form .form-group {
+  margin-bottom: 25px;
+}
+
+.news-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.news-form input,
+.news-form select,
+.news-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.news-form input:focus,
+.news-form select:focus,
+.news-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.news-form button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.news-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(30,64,175,0.3);
+}
+
+@media (max-width: 968px) {
+  .admin-dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+}
